@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .example{
+            border: 1px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>the document object</h1>
+    <h2>the queryselector All() method</h2>
+    <h3>change the background color all p element</h3>
+    <div>a div element</div>
+    <p>p element</p>
+    <p>p elememt</p>
+    <div class="example">
+        <p>a p element in side a div element</p>
+    </div>
+    <script>
+        const nodelist=document.querySelectorAll("p");
+        for (let i = 0; i < nodelist.length;i++){
+            nodelist[i].style.backgroundColor="red";
+        }
+    </script>
+</body>
+</html>
